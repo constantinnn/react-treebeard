@@ -96,7 +96,26 @@ class TreeNode extends React.Component {
             return this.renderLoading(decorators);
         }
 
-        let children = node.children;
+        if (node.children.childx === undefined) {
+            var children = [];
+            console.log('UNDEFINED ---- ', node.children);
+            for (var i = 0; i < node.children.length; i++) {
+                for (var j = 0; j < node.children[i].childx.length; j++) {
+                children.push(node.children[i].childx[j]);
+                }
+             //if (children.length > 0) {
+            //    var temp = [];
+            //    temp.push(node.children[i].childx);
+            //    children = children.concat(temp);
+            //    temp = [];
+            //} else {
+            //    children.push(node.children[i].childx);
+            //}
+            }
+                //var children = node.children;
+        } else {
+            var children = node.children.childx;
+        }
         if (!Array.isArray(children)) {
             children = children ? [children] : [];
         }
