@@ -97,10 +97,10 @@ class TreeNode extends React.Component {
         }
 
         if (node.children.childx === undefined) {
-            var children = [];
+            let children = [];
             console.log('UNDEFINED ---- ', node.children);
-            for (var i = 0; i < node.children.length; i++) {
-                for (var j = 0; j < node.children[i].childx.length; j++) {
+            for (let i = 0; i < node.children.length; i++) {
+                for (let j = 0; j < node.children[i].childx.length; j++) {
                 children.push(node.children[i].childx[j]);
                 }
              //if (children.length > 0) {
@@ -114,7 +114,7 @@ class TreeNode extends React.Component {
             }
                 //var children = node.children;
         } else {
-            var children = node.children.childx;
+            let children = node.children.childx;
         }
         if (!Array.isArray(children)) {
             children = children ? [children] : [];
