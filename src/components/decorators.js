@@ -36,7 +36,8 @@ const Header = ({node, style}) => {
     return (
         <div style={style.base}>
             <div style={style.title}>
-                {node.name}
+// might not work as expected if the src folder will be compiled into a new lib folder. In this version, lib folder behaves as expected
+                {node.ClassId} ? {node.name} + ' ('+ {node.ClassId} + ')' : {node.name}
             </div>
         </div>
     );
