@@ -100,7 +100,7 @@ class TreeNode extends React.Component {
             let children = [];
             console.log('UNDEFINED ---- ', node.children);
             for (let i = 0; i < node.children.length; i++) {
-                for (let j = 0; j < node.children[i].child.length; j++) {
+                for (let j = 0; node.children[i] !== null && j < node.children[i].child.length; j++) {
                 children.push(node.children[i].child[j]);
                 }
              //if (children.length > 0) {
@@ -114,7 +114,9 @@ class TreeNode extends React.Component {
             }
                 //var children = node.children;
         } else {
-            let children = node.children.child;
+            if (node.children.child !== null) {
+                let children = node.children.child;
+            }
         }
         if (!Array.isArray(children)) {
             children = children ? [children] : [];
