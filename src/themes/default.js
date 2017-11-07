@@ -4,11 +4,11 @@ export default {
     tree: {
         base: {
             listStyle: 'none',
-            backgroundColor: '#21252B',
+            backgroundColor: '#fafafa',
             margin: 0,
             padding: 0,
-            color: '#9DA5AB',
-            fontFamily: 'lucida grande ,tahoma,verdana,arial,sans-serif',
+            color: '#282828',
+            fontFamily: '"Open Sans", "WOL_SL", "Segoe UI Semilight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
             fontSize: '14px'
         },
         node: {
@@ -22,7 +22,7 @@ export default {
                 display: 'block'
             },
             activeLink: {
-                background: '#31363F'
+                background: '#f1f1f1'
             },
             toggle: {
                 base: {
