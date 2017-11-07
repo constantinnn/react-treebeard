@@ -22,7 +22,7 @@ export default {
                 display: 'block'
             },
             activeLink: {
-                background: '#f1f1f1'
+                background: '#fafafa'
             },
             toggle: {
                 base: {
