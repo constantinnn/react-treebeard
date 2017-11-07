@@ -7,7 +7,7 @@ export default {
             backgroundColor: '#fafafa',
             margin: 0,
             padding: 0,
-            color: '#282828',
+            color: '#000000',
             fontFamily: '"Open Sans", "WOL_SL", "Segoe UI Semilight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
             fontSize: '14px'
         },
@@ -51,7 +51,7 @@ export default {
                 base: {
                     display: 'inline-block',
                     verticalAlign: 'top',
-                    color: '#9DA5AB'
+                    color: '#000000'
                 },
                 connector: {
                     width: '2px',
