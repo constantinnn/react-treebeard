@@ -98,7 +98,6 @@ class TreeNode extends React.Component {
 
         if (node.children.child === undefined) {
             let children = [];
-            console.log('UNDEFINED ---- ', node.children);
             for (let i = 0; i < node.children.length; i++) {
                 for (let j = 0; node.children[i] !== null && j < node.children[i].child.length; j++) {
                 children.push(node.children[i].child[j]);
