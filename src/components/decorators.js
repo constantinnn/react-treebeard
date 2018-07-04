@@ -18,13 +18,13 @@ const Toggle = ({style}) => {
     const points = `0,0 0,${height} ${width},${midHeight}`;
 
     return (
-        <div style={style.base}>
-            <div style={style.wrapper}>
-                <svg height={height} width={width}>
-                    <polygon points={points}
-                             style={style.arrow}/>
-                </svg>
-            </div>
+        <div style={style.base} className="treeviewArrow">
+            // <div style={style.wrapper}>
+            //     <svg height={height} width={width}>
+            //         <polygon points={points}
+            //                  style={style.arrow}/>
+            //     </svg>
+            // </div>
         </div>
     );
 };
